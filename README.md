@@ -9,6 +9,6 @@
 
 The functions are instance methods of `Bluewolf`.
 
-In `#find_duplicate`, Ruby's `Enumerable#detect` is used to return the first element in a set for which the block condition is not false.
+In `#find_duplicate`, `Enumerable#detect` is used to return the first element in a set for which the block condition is not false.
 
 The approach taken with `#first_non_repeating` is to remove all of the repeating characters and then return the first character in the resulting string (the first non-repeating character).
