@@ -1,4 +1,4 @@
-require "./challenge.rb"
+require "./bluewolf.rb"
 
 describe Bluewolf do
   let(:bluewolf) { Bluewolf.new }
