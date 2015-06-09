@@ -11,7 +11,7 @@ describe Bluewolf do
   end
 
   describe "#first_non_repeating" do
-    it 'finds the first onn-repeating character in a string' do
+    it 'finds the first non-repeating character in a string' do
       expect(bluewolf.first_non_repeating("defd")).to eq "e"
       expect(bluewolf.first_non_repeating("bamboo")).to eq "a"
       expect(bluewolf.first_non_repeating("coolness")).to eq "c"
