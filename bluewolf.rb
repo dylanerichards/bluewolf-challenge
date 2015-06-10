@@ -9,8 +9,11 @@ class Bluewolf
 
   def first_non_repeating(string)
     letters = string.split('')
-    duplicates = letters.find_all { |letter| letters.count(letter) > 1 }.uniq
-    non_duplicates = letters - duplicates
-    first_non_duplicate = non_duplicates.first
+
+    table = letters.each_with_object({}) do |letter, hash|
+      hash[letter] = letters.count(letter)
+    end
+
+    letters.each { |letter| return letter if table[letter] == 1  }
   end
 end
