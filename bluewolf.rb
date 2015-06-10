@@ -1,6 +1,10 @@
 class Bluewolf
   def find_duplicate(array)
-    array.detect { |element| array.count(element) > 1 }
+    set = Set.new
+
+    array.each do |element|
+      set.add(element) unless set.add?(element) == nil and return element
+    end
   end
 
   def first_non_repeating(string)
