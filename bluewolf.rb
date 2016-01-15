@@ -2,9 +2,7 @@ require "set"
 
 class Bluewolf < Set
   def find_duplicate(array)
-    array.each do |element|
-      add(element) unless add?(element) == nil and return element
-    end
+    array.each { |element|  return element if add?(element) == nil }
   end
 
   def first_non_repeating(string)
