@@ -16,6 +16,6 @@ class Bluewolf
       hash[letter] = letters.count(letter)
     end
 
-    letters.each { |letter| return letter if table[letter] == 1  }
+    letters.each { |letter| return letter if table[letter] == 1 }
   end
 end
