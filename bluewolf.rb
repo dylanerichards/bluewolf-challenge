@@ -1,11 +1,9 @@
 require "set"
 
-class Bluewolf
+class Bluewolf < Set
   def find_duplicate(array)
-    set = Set.new
-
     array.each do |element|
-      set.add(element) unless set.add?(element) == nil and return element
+      add(element) unless add?(element) == nil and return element
     end
   end
 
