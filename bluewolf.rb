@@ -8,10 +8,10 @@ class Bluewolf < Set
   def first_non_repeating(string)
     letters = string.split("")
 
-    letters_and_counts = letters.each_with_object({}) do |letter, hash|
+    letters_with_counts = letters.each_with_object({}) do |letter, hash|
       hash[letter] = letters.count(letter)
     end
 
-    letters_and_counts.each { |element, count| return element if count == 1 }
+    letters_with_counts.each { |element, count| return element if count == 1 }
   end
 end
