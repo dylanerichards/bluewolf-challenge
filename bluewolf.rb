@@ -10,7 +10,7 @@ class Bluewolf
   end
 
   def first_non_repeating(string)
-    letters = string.split('')
+    letters = string.split("")
 
     table = letters.each_with_object({}) do |letter, hash|
       hash[letter] = letters.count(letter)
