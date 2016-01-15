@@ -1,7 +1,7 @@
 require "./bluewolf.rb"
 
 describe Bluewolf do
-  let(:bluewolf) { Bluewolf.new }
+  let(:bluewolf) { described_class.new }
 
   describe "#find_duplicate" do
     it "finds the duplicate in the array" do
