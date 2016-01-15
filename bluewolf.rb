@@ -1,3 +1,5 @@
+require "set"
+
 class Bluewolf
   def find_duplicate(array)
     set = Set.new
